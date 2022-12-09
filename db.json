@@ -1,0 +1,76 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstName": "ilyass",
+      "lastName": "ayach",
+      "age": 24,
+      "profilePicture": "profile.jpg",
+      "description": "ilyass is a natural student. hes’s got an in-built desire to learn and grow, and always comes into the classroom ready to absorb more knowledge."
+    },
+    {
+      "id": 2,
+      "firstName": "mouad",
+      "lastName": "ayach",
+      "age": 16,
+      "profilePicture": "profile.jpg",
+      "description": "mouad is an excellent student. he turns up on time, is always prepared, and keen to contribute his ideas to class discussions."
+    },
+    {
+      "id": 3,
+      "firstName": "yassine",
+      "lastName": "ayach",
+      "age": 18,
+      "profilePicture": "profile.jpg",
+      "description": "yassine has been exceptional student which is reflected in his top grades that he earned throughout the year. She will go on to his next year of school with a great reputation for diligence and persistence."
+    },
+    {
+      "id": 4,
+      "firstName": "ayoub",
+      "lastName": "ayach",
+      "age": 26,
+      "profilePicture": "profile.jpg",
+      "description": "ayoub should be proud that he is an exemplary member of the class. his participation is second to none and other students look to him for guidance on what to do in the classroom."
+    },
+    {
+      "id": 5,
+      "firstName": "safae",
+      "lastName": "ayach",
+      "age": 6,
+      "profilePicture": "profile.jpg",
+      "description": "safae is a fantastic student and I’m so sad to see her leave. She’s come to class every day with a big smile on her face and a willingness to get involved in all the classroom tasks. Best of luck next year safae!"
+    },
+    {
+      "id": 6,
+      "firstName": "rayan",
+      "lastName": "ayach",
+      "age": 6,
+      "profilePicture": "profile.jpg",
+      "description": "rayan is an independent thinker. he’ll never take anything on face value, but instead uses his logic and critical thinking to come to a conclusion on his own."
+    },
+    {
+      "id": 7,
+      "firstName": "ahlam",
+      "lastName": "ayach",
+      "age": 24,
+      "profilePicture": "profile.jpg",
+      "description": "ahlam is an incredibly knowledgeable student. Perhaps one day I will see her on the set of Jeopardy and be proud to know I was a part of hear learning story."
+    },
+    {
+      "id": 8,
+      "firstName": "ranya",
+      "lastName": "ayach",
+      "age": 9,
+      "profilePicture": "profile.jpg",
+      "description": "ranya has been an outstanding student all year long due to her ability to focus, support others, and perform under pressure."
+    },
+    {
+      "id": 10,
+      "firstName": "yassmine",
+      "lastName": "ayach",
+      "age": 18,
+      "profilePicture": "profile.jpg",
+      "description": "yassmine has been an overachiever all year and I wouldn’t want it any other way! If I set her a task, she goes about not only completing it, but doing the extra research to make sure she impresses me with her knowledge!"
+    }
+  ]
+}
