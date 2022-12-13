@@ -2,10 +2,10 @@ import {Container, Grid, Stack} from "@mui/material";
 import {FC} from "react";
 import {useQuery} from "react-query";
 import {fetchStudents} from "../../service/StudentService";
-import Student from "./student/Student";
-import classes from "./Students.module.css";
+import StudentListItem from "./studentListItem/StudentListItem";
+import classes from "./StudentsList.module.css";
 
-const Students: FC = () => {
+const StudentsList: FC = () => {
     const {
         isLoading,
         error,
@@ -27,11 +27,11 @@ const Students: FC = () => {
                 alignItems="center"
             >
                 {students?.map((student) => {
-                    return <Student key={student.id} {...student}></Student>;
+                    return <StudentListItem key={student.id} {...student}></StudentListItem>;
                 })}
             </Grid>
         </Container>
     );
 };
 
-export default Students;
+export default StudentsList;

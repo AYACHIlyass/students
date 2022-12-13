@@ -2,9 +2,9 @@ import {Button, Card, CardActions, CardContent, CardMedia, Grid, Typography} fro
 import { FC } from "react";
 import { Student as StudentModel } from "../../../model/Student";
 import image from "../../../assets/profile.jpg"
-import classes  from "./Student.module.css";
+import classes  from "./StudentListItem.module.css";
 
-const Student: FC<StudentModel> = (student) => {
+const StudentListItem: FC<StudentModel> = (student) => {
   return (
     <Grid item xs={6} sm={4} md={3} style={{height:'100%'}} >
         <Card>
@@ -30,4 +30,4 @@ const Student: FC<StudentModel> = (student) => {
   );
 };
 
-export default Student;
+export default StudentListItem;
