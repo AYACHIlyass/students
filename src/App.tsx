@@ -1,16 +1,15 @@
-import { QueryClient, QueryClientProvider } from "react-query";
+import {QueryClient, QueryClientProvider} from "react-query";
 import "./App.css";
-import StudentsList from "./components/studentsList/StudentsList";
-import {Stack} from "@mui/material";
+import {CustomRoutes} from "./routes/CustomRoutes";
+
 const queryClient = new QueryClient();
+
 function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <Stack>
-        <StudentsList></StudentsList>
-      </Stack>
-    </QueryClientProvider>
-  );
+    return (
+        <QueryClientProvider client={queryClient}>
+            <CustomRoutes></CustomRoutes>
+        </QueryClientProvider>
+    );
 }
 
 export default App;
