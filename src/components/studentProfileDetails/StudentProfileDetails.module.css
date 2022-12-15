@@ -1,0 +1,21 @@
+.customContainer {
+    max-width: 95%;
+    margin-bottom: 20px;
+    margin-top: 16px;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.boxContainer img {
+    height: 350px
+}
+
+@media screen and (max-width: 990px) {
+    .boxContainer {
+        flex-wrap: wrap;
+    }
+}
