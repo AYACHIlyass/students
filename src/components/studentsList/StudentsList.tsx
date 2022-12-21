@@ -1,9 +1,9 @@
-import {Container, Grid, Stack} from "@mui/material";
+import {Container, Grid} from "@mui/material";
 import {FC} from "react";
-import {useQuery} from "react-query";
-import {fetchStudents} from "../../service/StudentService";
 import StudentListItem from "./studentListItem/StudentListItem";
 import classes from "./StudentsList.module.css";
+import {useFetchStudents} from "./hooks/useFetchStudents";
+import {useManageSpinnerState} from "../../hooks/useManageSpinnerState";
 
 const StudentsList: FC = () => {
     const {
@@ -11,14 +11,14 @@ const StudentsList: FC = () => {
         error,
         isError,
         data: students,
-    } = useQuery(process.env.REACT_APP_GET_STUDENTS_REQUEST_ID!, fetchStudents);
-    if (isLoading) {
-        return <h1>Loading</h1>;
-    } else if (isError) {
+        isSuccess
+    } = useFetchStudents()
+    useManageSpinnerState(isLoading, isSuccess);
+    if (isError) {
         return <h1>{(error as Error).message}</h1>;
     }
     return (
-        <Container maxWidth={false} className={classes.customContainer} >
+        <Container maxWidth={false} className={classes.customContainer}>
             <Grid
                 container
                 spacing={2}
