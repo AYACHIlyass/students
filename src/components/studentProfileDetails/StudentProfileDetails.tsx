@@ -1,21 +1,17 @@
 import {FC} from "react";
 import {useParams} from "react-router-dom";
-import {useQuery} from "react-query";
-import {fetchStudentById} from "../../service/StudentService";
 import {Box, Container, Typography} from "@mui/material";
 import image from "../../assets/profile.jpg"
 import classes from "./StudentProfileDetails.module.css";
+import {useFetchStudentById} from "./hooks/useFetchStudentById";
+import {useManageSpinnerState} from "../../hooks/useManageSpinnerState";
 
 const StudentProfileDetails: FC = () => {
     const {studentId} = useParams();
-    const {isLoading, isError, error, data: student} = useQuery(
-        process.env.REACT_APP_BASE_URL!,
-        () => fetchStudentById(studentId!)
-    );
-    if (isLoading) {
-        return <h1>Loading</h1>;
-    } else if (isError) {
-        return <h1>{(error as Error).message}</h1>;
+    const {isLoading, isError, error, data: student, isSuccess} = useFetchStudentById(studentId!)
+    useManageSpinnerState(isLoading, isSuccess);
+    if (isError) {
+        return <div>{(error as Error).message}</div>
     }
     return <Container maxWidth={false} className={classes.customContainer}>
         <Box className={classes.boxContainer}>
